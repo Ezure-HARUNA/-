@@ -1,0 +1,36 @@
+@charset "UTF-8";
+ 
+//=========================================//
+//変数//
+//=========================================//
+
+$black:#000000;
+$purple:#800000;//背景
+$red:#BF0000;
+$brown:#641616;
+$white:#FFFFFF;
+$gray:#838383;//境界線
+
+$gradation-1:#BF0000;
+$gradation-2:#641616;
+$gradation-3:#3D0202;
+$gradation-4:#390000;
+
+
+//=========================================//
+//共通//
+//=========================================//
+
+html {
+    font-size: 62.5%;  //10px
+}
+
+body {
+    color: $white;
+    font-size: 12px;
+    font-family: Sawarabi Mincho, serif;
+    line-height: 1.67;
+    background-color: #000000;//背景
+}
+
+

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+header {
+    position: relative;
+    .vartical {
+        writing-mode: vertical-rl; //縦書き
+    }
+    .sub-title {
+       font-size: 1.6rem;
+       color: $white;
+       letter-spacing: 0;
+       margin-top:116.5px;
+        margin-left: 265.5px;
+   } 
+   .header-logo {
+        font-size: 4rem;
+        letter-spacing: 0;
+        -webkit-text-stroke: 1px $gray;
+        margin-top:-72.5px;
+        margin-left: 193.5px;
+   }
+    nav {
+        margin-top: 100px;
+        margin-left: 182.5px;
+        ul {
+            height: 160px;
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            font-size: 1.8rem;
+            letter-spacing: 0;
+        }
+        
+    }
+    .purple-wrap {
+        background-color: $purple;
+        width: 60.5%;
+        height: 585px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+   .first-v-pic-wrap {
+    top: 84px;
+    right: 83px;
+    width: 64.5%;//826/1280
+    height: 618px;
+    background-image: url(../img/tonkatsu.png);
+    z-index: 10;
+    background-size: cover;
+    position: relative;
+ }
+
+ .reserve-btn {
+    //position: absolute;
+    background-color: #fff;
+    border: 1px solid #707070;
+    width: 6.1%;//78/1280
+    height: 252px;
+    margin: 0 auto;
+    margin-top: -68px;//天井から
+    font-size: 1.0rem;
+    color: $white;
+    letter-spacing: 0;
+    writing-mode: vertical-rl;
+
+    background: transparent linear-gradient(189deg, #BF0000 0%, #641616 70%, #3D0202 100%, #390000 100%) 0% 0% no-repeat padding-box;
+    
+}
+
+}
+
