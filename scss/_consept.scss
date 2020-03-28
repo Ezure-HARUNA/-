@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+#consept {
+    position: relative;
+    width: 100%;
+    height: 945px;
+    h2 {
+        font-size: 2.8vw;//3.6rem
+        position: absolute;
+        top: 10.5%;//99/945px
+        left: 50%;//中央
+        transform: translate(-50%, -50%);
+    }
+    .under-bar {
+        background-color: white;
+        width: 7.8%;//100/1280
+        height: 1px;
+        position: absolute;
+        top: 16.7%;//157.5/945px;
+        left:50%;//中央
+        transform: translate(-50%, -50%);
+    }
+    .slideshow {
+        position: absolute;
+        overflow: hidden;
+        width: 68.4%;//876/1280px
+        height: 36.7%;//347/945
+        box-shadow: 0px 10px 99px $black;
+        top: 24.1%;//228/945px
+        left: 15%;
+        z-index: 10;
+        .pig-img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            opacity: 0; 
+            /* z-index: 10; */
+            /* animation: anime 3s 0s 1; */
+        }   
+        .appear.pig-img {
+            animation: anime 3s 0s 1;
+        }
+        
+        
+        @keyframes  anime {
+            0% {
+                  opacity: 0.5;
+              }
+            20% {
+                opacity: 0.7;
+            }
+            50% {
+                opacity:0.8;
+            }
+            80% {
+                opacity: 0.7;
+            }
+            100% { 
+                opacity: 0.5; 
+                transform: scale(1.1);
+            }
+          }
+    }
+    .purple-wrap2 {
+        background-color: $purple;
+        width:92.5%;//1093/1280px;
+        height: 462px;
+        position: absolute;
+        top: 43.7%; //413/945px
+        left: 7.34%;//94/1280
+        transition:translate(-50%, -50%);
+    }
+    .consept-text {
+        position: absolute;
+        top: 68.1%;//644/945
+        left: 23.8%;//225/945px
+        width: 64.9%;//831/1280px
+        height: 157px;
+        line-height: 52.3px;
+        text-align: center;
+        z-index: 5;
+        .text {
+            font-size: 1.5vw;//2.0rem
+        }
+        .main-text {
+            font-size: 1.95vw;//2.5rem
+        }
+        
+    }
+
+}

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {       //横スクロールできる余白を消す
+    overflow-x: hidden;
+}
+
 @import "reset";
 @import "lib";
 @import "header";
+@import "consept";
+@import "menu";
+@import "access";

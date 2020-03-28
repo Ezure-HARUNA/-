@@ -1,0 +1,50 @@
+#access {
+    position: relative;
+    height: 689px;
+    h2 {
+        font-size: 2.8vw;//3.6rem
+        position: absolute;
+        top: 14.5%;//100/689px
+        left: 50%;//中央
+        transform: translate(-50%, -50%);
+    }
+    .under-bar {
+        background-color: white;
+        width: 7.8%;//100/1280
+        height: 1px;
+        position: absolute;
+        top: 22.9%;//158.5/689px;
+        left:50%;//中央
+        transform: translate(-50%, -50%);
+    }
+    .access-text-wrap {
+        position: absolute;
+        top: 66.5%;//458/689
+        left: 4.2%;//54/1280
+        font-size: 1.4vw;//1.8rem
+        width: 23.3%;//298/1280
+        height: 64px;
+        text-align: center;
+        line-height: 32px;
+        z-index: 5;
+    }
+    .google-map {
+        position: absolute;
+        top: 37.4%;
+        left: 31.2%;//400/1280
+        width: 68.8%;
+        height: 314px;
+        box-shadow: 10px 10px 99px $black;
+        z-index: 10;
+    }
+    .purple-wrap3 {
+        background-color: $purple;
+        width:76.7%;//982/1280px;
+        height: 311px;
+        position: absolute;
+        top: 44.7%;//308/689
+        left: 0%;//0/1280
+        transition:translate(-50%, -50%);
+        z-index: 2;
+    }
+}

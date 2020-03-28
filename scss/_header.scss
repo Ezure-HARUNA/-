@@ -2,32 +2,35 @@
 
 header {
     position: relative;
+    height: 799px;
     .vartical {
         writing-mode: vertical-rl; //縦書き
     }
     .sub-title {
-       font-size: 1.6rem;
-       color: $white;
-       letter-spacing: 0;
-       margin-top:116.5px;
-        margin-left: 265.5px;
+        position: absolute;
+        top: 14.6%;//116.5/799
+        left: 20.7%;//265.5.1280       
+        font-size: 1.2vw;//1.6rem
+        letter-spacing: 0;
    } 
    .header-logo {
-        font-size: 4rem;
-        letter-spacing: 0;
-        -webkit-text-stroke: 1px $gray;
-        margin-top:-72.5px;
-        margin-left: 193.5px;
+       position: absolute;
+       top: 17.4%;
+       left: 15.4%;//197/1280
+       font-size: 3.1vw;//4rem
+       letter-spacing: 0;
+       -webkit-text-stroke: 1px $gray;
    }
     nav {
-        margin-top: 100px;
-        margin-left: 182.5px;
+        position: absolute;
+        top: 60%;//480/799
+        left: 14.3%;//182.5/1280
         ul {
             height: 160px;
             display:flex;
             flex-direction: column;
             justify-content:space-between;
-            font-size: 1.8rem;
+            font-size: 1.4vw;//1.8rem
             letter-spacing: 0;
         }
         
@@ -37,37 +40,47 @@ header {
         width: 60.5%;
         height: 585px;
         position: absolute;
-        right: 0;
         top: 0;
+        right: 0;
     }
 
    .first-v-pic-wrap {
-    top: 84px;
-    right: 83px;
+    position: absolute;
+    top: 10.5%;
+    right: 0;
     width: 64.5%;//826/1280
     height: 618px;
-    background-image: url(../img/tonkatsu.png);
+    background-image: url(../img/tonkatsu.jpg);
     z-index: 10;
     background-size: cover;
-    position: relative;
  }
 
  .reserve-btn {
-    //position: absolute;
-    background-color: #fff;
+    position: absolute;
+    bottom: 0.5%;//4/799
+    left: 0.3%;//4/1280
     border: 1px solid #707070;
     width: 6.1%;//78/1280
+    z-index: 10;
     height: 252px;
     margin: 0 auto;
-    margin-top: -68px;//天井から
     font-size: 1.0rem;
     color: $white;
-    letter-spacing: 0;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-
     background: transparent linear-gradient(189deg, #BF0000 0%, #641616 70%, #3D0202 100%, #390000 100%) 0% 0% no-repeat padding-box;
     
 }
+.reserve-frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6.7%;//86/1280
+    height: 261px;
+    background: transparent linear-gradient(189deg, #BF0000 0%, #641616 70%, #3D0202 100%, #390000 100%) 0% 0% no-repeat padding-box;
+    border: none;
+}
+
 
 }
 

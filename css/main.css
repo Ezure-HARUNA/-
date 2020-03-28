@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -122,38 +126,64 @@ body {
   font-family: Sawarabi Mincho, serif;
   line-height: 1.67;
   background-color: #000000;
+  position: relative;
+}
+
+footer {
+  position: relative;
+  height: 269px;
+}
+footer .bar {
+  position: absolute;
+  top: 37.7%;
+  right: 0%;
+  width: 85.4%;
+  height: 1px;
+  background-color: #fff;
+}
+footer p {
+  position: absolute;
+  top: 63.2%;
+  right: 29.8%;
+  width: 40.3%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 1.4vw;
 }
 
 header {
   position: relative;
+  height: 799px;
 }
 header .vartical {
   writing-mode: vertical-rl;
 }
 header .sub-title {
-  font-size: 1.6rem;
-  color: #FFFFFF;
+  position: absolute;
+  top: 14.6%;
+  left: 20.7%;
+  font-size: 1.2vw;
   letter-spacing: 0;
-  margin-top: 116.5px;
-  margin-left: 265.5px;
 }
 header .header-logo {
-  font-size: 4rem;
+  position: absolute;
+  top: 17.4%;
+  left: 15.4%;
+  font-size: 3.1vw;
   letter-spacing: 0;
   -webkit-text-stroke: 1px #838383;
-  margin-top: -72.5px;
-  margin-left: 193.5px;
 }
 header nav {
-  margin-top: 100px;
-  margin-left: 182.5px;
+  position: absolute;
+  top: 60%;
+  left: 14.3%;
 }
 header nav ul {
   height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 1.8rem;
+  font-size: 1.4vw;
   letter-spacing: 0;
 }
 header .purple-wrap {
@@ -161,31 +191,250 @@ header .purple-wrap {
   width: 60.5%;
   height: 585px;
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
 }
 header .first-v-pic-wrap {
-  top: 84px;
-  right: 83px;
+  position: absolute;
+  top: 10.5%;
+  right: 0;
   width: 64.5%;
   height: 618px;
-  background-image: url(../img/tonkatsu.png);
+  background-image: url(../img/tonkatsu.jpg);
   z-index: 10;
   background-size: cover;
-  position: relative;
 }
 header .reserve-btn {
-  background-color: #fff;
+  position: absolute;
+  bottom: 0.5%;
+  left: 0.3%;
   border: 1px solid #707070;
   width: 6.1%;
+  z-index: 10;
   height: 252px;
   margin: 0 auto;
-  margin-top: -68px;
   font-size: 1.0rem;
   color: #FFFFFF;
-  letter-spacing: 0;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   background: transparent linear-gradient(189deg, #BF0000 0%, #641616 70%, #3D0202 100%, #390000 100%) 0% 0% no-repeat padding-box;
+}
+header .reserve-frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6.7%;
+  height: 261px;
+  background: transparent linear-gradient(189deg, #BF0000 0%, #641616 70%, #3D0202 100%, #390000 100%) 0% 0% no-repeat padding-box;
+  border: none;
+}
+
+#consept {
+  position: relative;
+  width: 100%;
+  height: 945px;
+}
+#consept h2 {
+  font-size: 2.8vw;
+  position: absolute;
+  top: 10.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#consept .under-bar {
+  background-color: white;
+  width: 7.8%;
+  height: 1px;
+  position: absolute;
+  top: 16.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#consept .slideshow {
+  position: absolute;
+  overflow: hidden;
+  width: 68.4%;
+  height: 36.7%;
+  box-shadow: 0px 10px 99px #000000;
+  top: 24.1%;
+  left: 15%;
+  z-index: 10;
+}
+#consept .slideshow .pig-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  /* z-index: 10; */
+  /* animation: anime 3s 0s 1; */
+}
+#consept .slideshow .appear.pig-img {
+  animation: anime 3s 0s 1;
+}
+@keyframes anime {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+#consept .purple-wrap2 {
+  background-color: #800000;
+  width: 92.5%;
+  height: 462px;
+  position: absolute;
+  top: 43.7%;
+  left: 7.34%;
+  transition: translate(-50%, -50%);
+}
+#consept .consept-text {
+  position: absolute;
+  top: 68.1%;
+  left: 23.8%;
+  width: 64.9%;
+  height: 157px;
+  line-height: 52.3px;
+  text-align: center;
+  z-index: 5;
+}
+#consept .consept-text .text {
+  font-size: 1.5vw;
+}
+#consept .consept-text .main-text {
+  font-size: 1.95vw;
+}
+
+#menu {
+  position: relative;
+  height: 1159px;
+}
+#menu h2 {
+  font-size: 3.6rem;
+  position: absolute;
+  top: 8.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#menu .under-bar {
+  background-color: white;
+  width: 7.8%;
+  height: 1px;
+  position: absolute;
+  top: 13.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#menu p {
+  font-size: 1.4vw;
+  position: absolute;
+  top: 19.8%;
+  left: 30.2%;
+  width: 39.5%;
+  height: 20px;
+  line-height: 20px;
+}
+#menu .menu-pic-wrap-1 {
+  position: absolute;
+  top: 26.7%;
+  left: 8.6%;
+  width: 85.4%;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+#menu .menu-pic-wrap-1 .menu-pic-1 {
+  background-image: url(../img/menu1.png);
+  width: 60.3%;
+  height: 420px;
+  background-size: cover;
+}
+#menu .menu-pic-wrap-1 .menu-pic-2 {
+  background-image: url(../img/menu2.png);
+  width: 38.3%;
+  height: 420px;
+  background-size: cover;
+}
+#menu .menu-pic-wrap-2 {
+  position: absolute;
+  top: 64.6%;
+  left: 8.6%;
+  width: 85.4%;
+  height: 340px;
+  display: flex;
+}
+#menu .menu-pic-wrap-2 .menu-pic-3 {
+  background-image: url(../img/menu3.png);
+  width: 68%;
+  height: 340px;
+  background-size: cover;
+}
+#menu .menu-pic-wrap-2 .menu-pic-4 {
+  background-image: url(../img/menu4.png);
+  width: 30.5%;
+  height: 340px;
+  background-size: cover;
+}
+
+#access {
+  position: relative;
+  height: 689px;
+}
+#access h2 {
+  font-size: 2.8vw;
+  position: absolute;
+  top: 14.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#access .under-bar {
+  background-color: white;
+  width: 7.8%;
+  height: 1px;
+  position: absolute;
+  top: 22.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#access .access-text-wrap {
+  position: absolute;
+  top: 66.5%;
+  left: 4.2%;
+  font-size: 1.4vw;
+  width: 23.3%;
+  height: 64px;
+  text-align: center;
+  line-height: 32px;
+  z-index: 5;
+}
+#access .google-map {
+  position: absolute;
+  top: 37.4%;
+  left: 31.2%;
+  width: 68.8%;
+  height: 314px;
+  box-shadow: 10px 10px 99px #000000;
+  z-index: 10;
+}
+#access .purple-wrap3 {
+  background-color: #800000;
+  width: 76.7%;
+  height: 311px;
+  position: absolute;
+  top: 44.7%;
+  left: 0%;
+  transition: translate(-50%, -50%);
+  z-index: 2;
 }
 
 /*# sourceMappingURL=main.css.map */

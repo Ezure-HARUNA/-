@@ -31,6 +31,29 @@ body {
     font-family: Sawarabi Mincho, serif;
     line-height: 1.67;
     background-color: #000000;//背景
+    position: relative;
+}
+
+footer {
+    position: relative;
+    height: 269px;
+    .bar {
+        position: absolute;
+        top: 37.7%;//101.5/269
+        right: 0%;
+        width: 85.4%;//1093/1280
+        height: 1px;
+        background-color: #fff;
+    }
+    p {
+        position: absolute;
+        top: 63.2%;//170/269
+        right: 29.8%;//382/1280
+        width: 40.3%;//516/1280
+        height: 20px;
+        line-height: 20px;
+        font-size: 1.4vw;
+    }
 }
 
 
