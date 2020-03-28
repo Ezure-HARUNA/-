@@ -186,6 +186,27 @@ header nav ul {
   font-size: 1.4vw;
   letter-spacing: 0;
 }
+header nav ul li {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+header nav ul li::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: all 0.3s ease 0s;
+}
+header nav ul li:hover {
+  cursor: pointer;
+}
+header nav ul li:hover::after {
+  width: 100%;
+}
 header .purple-wrap {
   background-color: #800000;
   width: 60.5%;

@@ -30,3 +30,37 @@ setInterval(() => {
     }
 
 }, 3000);  //ms省略可
+
+//スムーススクロール
+//クリックされた場所を特定する→（）の中にeを入れる
+
+
+
+document.addEventListener('click', (e) => {
+    //e.targetでイベントの発生の発生元を特定できる！
+    const　element =e.target
+    console.log(element.hash);
+    
+    //aタグのデフォルトの挙動をストップする
+    e.preventDefault()
+
+    //ジャンプ先の要素を取得する
+    //docment.querySelector('#first')
+    const jumpToSection = document.querySelector(element.hash)
+    //console.log(element, 'がクリックされた！')　
+
+    //const targetSection =
+
+    //scrollIntoView関数を用いて特定の要素までスムーススクロールする
+    //ジャンプ先の要素.scrollIntoView()
+
+    jumpToSection.scrollIntoView({
+        //スムーズにスクロールする
+    　　behavior: "smooth",
+    　　//先頭までスクロール
+        block: "start"
+    })
+    
+})
+
+

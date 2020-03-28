@@ -32,7 +32,31 @@ header {
             justify-content:space-between;
             font-size: 1.4vw;//1.8rem
             letter-spacing: 0;
+           
+            li {
+                display: inline-block;
+                position: relative;
+                text-decoration: none;
+            }
+            li::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: white;
+                transition: all 0.3s ease 0s;
+            }
+            li:hover {
+                cursor: pointer;
+            }
+            li:hover::after {
+                width: 100%;
+            }
+    
         }
+        
         
     }
     .purple-wrap {
