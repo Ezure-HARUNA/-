@@ -28,7 +28,12 @@
         box-shadow: 0px 10px 99px $black;
         top: 24.1%;//228/945px
         left: 15%;
+        background-color: #fff;
+        background-size: unset;
         z-index: 10;
+        @media screen and (max-width:800px){
+            height: 22%;
+            }
         .pig-img {
             width: 100%;
             position: absolute;
